@@ -1,1 +1,29 @@
 theme: jekyll-theme-cayman
+
+# Site settings for SEO
+title: "Tao Sun - PhD Student | Robotics & Computer Vision"
+description: "Tao Sun's academic website. PhD student at McGill University and visiting researcher at Princeton University, specializing in robotics, computer vision, and end-to-end learning for construction automation."
+url: "https://taosun99.github.io"  # Replace with your actual domain
+baseurl: ""
+
+# Author information
+author:
+  name: "Tao Sun"
+  email: "tao.sun@mail.mcgill.ca"
+  affiliation: "McGill University & Princeton University"
+
+# SEO and social media
+social:
+  twitter: "Tao_Sun7"
+  
+# Google Analytics (add your tracking ID if you have one)
+# google_analytics: "UA-XXXXXXXX-X"
+
+# Enable plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# SEO optimization
+lang: en-US
+timezone: America/New_York

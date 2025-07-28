@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /resources/code/
+
+# Sitemap location
+Sitemap: https://taosun99.github.io/sitemap.xml 
