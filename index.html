@@ -407,7 +407,7 @@
           var n = d.downloadsAllTime;
           if (typeof n !== 'number') return;
           el.className = 'hf-badge';
-          el.innerHTML = '<span><img src="resources/imgs/hf_logo.svg" alt="">Downloads</span>' +
+          el.innerHTML = '<span><img src="resources/imgs/hf_logo.svg" width="14" height="13" alt="">Downloads</span>' +
             '<span>' + (n >= 1000 ? Math.floor(n / 1000) + 'k+' : n) + '</span>';
         })
         .catch(function () {});
