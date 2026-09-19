@@ -247,6 +247,9 @@
             <!-- <em>arXiv</em>, 2025 -->
             <br>
             <a href="https://www.sciencedirect.com/science/article/pii/S0926580525002924">Journal paper</a>
+            /
+            <a href="https://huggingface.co/datasets/tsrobcvai/Synthetic_Dataset_for_Stirrup_Rebar_Segmentation">Dataset</a>
+            <span data-hf-dataset="tsrobcvai/Synthetic_Dataset_for_Stirrup_Rebar_Segmentation"></span>
             <p></p>
           </td>
         </tr>
@@ -269,6 +272,9 @@
             <!-- <em>arXiv</em>, 2025 -->
             <br>
             <a href="https://www.sciencedirect.com/science/article/pii/S147403462500117X">Journal paper</a>
+            /
+            <a href="https://huggingface.co/datasets/tsrobcvai/ROI-1555_Rebar_Detection_and_Instance_Segmentation_Dataset">Dataset</a>
+            <span data-hf-dataset="tsrobcvai/ROI-1555_Rebar_Detection_and_Instance_Segmentation_Dataset"></span>
             <p></p>
           </td>
         </tr>
@@ -392,5 +398,17 @@
     </td>
     </tr>
   </table>
+  <script>
+    // Hugging Face all-time dataset downloads, fetched once per page load.
+    document.querySelectorAll('[data-hf-dataset]').forEach(function (el) {
+      fetch('https://huggingface.co/api/datasets/' + el.dataset.hfDataset + '?expand[]=downloadsAllTime')
+        .then(function (r) { return r.json(); })
+        .then(function (d) {
+          if (typeof d.downloadsAllTime === 'number')
+            el.textContent = '(' + d.downloadsAllTime.toLocaleString('en-US') + ' downloads)';
+        })
+        .catch(function () {});
+    });
+  </script>
   </body>
 </html>
