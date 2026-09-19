@@ -129,3 +129,19 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
+
+/* Hugging Face download badge, styled like the shields.io "social" badge */
+.hf-badge {
+  display: inline-flex;
+  vertical-align: middle;
+  border: 1px solid #d5d5d5;
+  border-radius: 3px;
+  overflow: hidden;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #333;
+}
+.hf-badge span { padding: 0 6px; background: #fff; }
+.hf-badge span:first-child { padding: 0 5px; background: #fafafa; border-right: 1px solid #d5d5d5; }
+.hf-badge img { height: 13px; vertical-align: -2px; margin-right: 3px; }
