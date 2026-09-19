@@ -404,8 +404,9 @@
       fetch('https://huggingface.co/api/datasets/' + el.dataset.hfDataset + '?expand[]=downloadsAllTime')
         .then(function (r) { return r.json(); })
         .then(function (d) {
-          if (typeof d.downloadsAllTime === 'number')
-            el.textContent = '(' + d.downloadsAllTime.toLocaleString('en-US') + ' downloads)';
+          var n = d.downloadsAllTime;
+          if (typeof n === 'number')
+            el.textContent = '(' + (n >= 1000 ? Math.floor(n / 1000) + 'k+' : n) + ' downloads)';
         })
         .catch(function () {});
     });
